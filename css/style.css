@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+.navbar{
+    background:#020617;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#0284c7;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.footer{
+    text-align:center;
+    padding:25px;
+    background:#020617;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+form button{
+    width:100%;
+    padding:12px;
+    background:#38bdf8;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    margin-right:15px;
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.navbar{
+flex-direction:column;
+}
+
+.nav-links{
+margin-top:15px;
+}
+
+.nav-links a{
+display:block;
+margin:10px 0;
+}
+.back-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#334155;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#38bdf8;
+}
+}
